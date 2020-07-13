@@ -1,15 +1,386 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>水果项目</title>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<script src="js/swiper.js"></script>
+
 	</head>
+
 	<body>
-		
+		<!--容器-->
+		<div id="container">
+			<!--首页轮播-->
+			<div id="banner">
+				<div class="swiper-container swiper-container-banner">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img data-src="img/banner.png" />
+						</div>
+						<div class="swiper-slide">
+							<img data-src="img/banner.png" />
+						</div>
+						<div class="swiper-slide">
+							<img data-src="img/banner.png" />
+						</div>
+					</div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="searchInput">
+					<label id="q_label">夏季消暑水果捞</label>
+					<input id="q" type="text">
+					<i class="am-icon-search search" id="q_i"></i>
+				</div>
+			</div>
+			<!--菜单-->
+			<div id="menu">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="icon">
+								<b></b>
+							</i>
+							<span>专家问答</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon">
+								<b></b>
+							</i>
+							<span>常识百科</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="icon">
+								<b></b>
+							</i>
+							<span>最新资讯</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--内容部分-->
+			<div id="content">
+				<!--视频专题-->
+				<div class="videoList">
+					<p class="title">
+						视频专题
+						<span>
+							更多
+							<i></i>
+						</span>
+					</p>
+					<div class="swiper-container swiper-wrapper-video">
+						<div class="swiper-wrapper ">
+							<div class="swiper-slide">
+								<a href="#">
+									<img data-src="img/shipinzhaunti.png" />
+									<i></i>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img data-src="img/shipinzhaunti.png" />
+									<i></i>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img data-src="img/shipinzhaunti.png" />
+									<i></i>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img data-src="img/shipinzhaunti.png" />
+									<i></i>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img data-src="img/shipinzhaunti.png" />
+									<i></i>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img data-src="img/shipinzhaunti.png" />
+									<i></i>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img data-src="img/shipinzhaunti.png" />
+									<i></i>
+								</a>
+							</div>
+						</div>
+						<!-- 如果需要分页器 -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<!--推荐内容-->
+				<div class="recommend">
+					<p class="title">
+						推荐阅读
+					</p>
+					<!--图文推荐条目-->
+					<div class="picRecommend">
+						<a href="#">
+							<p class="title txt-cut">
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+							</p>
+							<ul>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+							</ul>
+							<p class="tools">
+								<span class="time">
+								13:09
+							</span>
+								<span class="readed">
+								阅读人数10000
+							</span>
+								<span class="shareAndCollect">
+									<i class="share"></i>
+									<i class="collect"></i>
+								</span>
+							</p>
+						</a>
+					</div>
+					<!--图文推荐条目-->
+					<div class="picRecommend">
+						<a href="#">
+							<p class="title txt-cut">
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+							</p>
+							<ul>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+							</ul>
+							<p class="tools">
+								<span class="time">
+								13:09
+							</span>
+								<span class="readed">
+								阅读人数10000
+							</span>
+								<span class="shareAndCollect">
+									<i class="share"></i>
+									<i class="collect"></i>
+								</span>
+							</p>
+						</a>
+					</div>
+					
+					<!--图文推荐条目-->
+					<div class="picRecommend">
+						<a href="#">
+							<p class="title txt-cut">
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+							</p>
+							<ul>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+							</ul>
+							<p class="tools">
+								<span class="time">
+								13:09
+							</span>
+								<span class="readed">
+								阅读人数10000
+							</span>
+								<span class="shareAndCollect">
+									<i class="share"></i>
+									<i class="collect"></i>
+								</span>
+							</p>
+						</a>
+					</div>
+					
+					<!--图文推荐条目-->
+					<div class="picRecommend">
+						<a href="#">
+							<p class="title txt-cut">
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+								Luckin Coffee 成为中国经济复苏的赌注，是国货之光还是国货之祸?
+							</p>
+							<ul>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+								<li>
+									<img data-src="img/MW-HI612_luckin_20190501120535_ZQ.png" />
+								</li>
+							</ul>
+							<p class="tools">
+								<span class="time">
+								13:09
+							</span>
+								<span class="readed">
+								阅读人数10000
+							</span>
+								<span class="shareAndCollect">
+									<i class="share"></i>
+									<i class="collect"></i>
+								</span>
+							</p>
+						</a>
+					</div>
+					
+						
+					<!--视频推荐条目-->
+					<div class="videoRecommend">
+						<a href="#">
+							<div class="imgbox">
+								<img data-src="img/videoindex.png"/>
+					  			<i></i>
+							</div>
+							<p class="text txt-cut">
+								随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…
+							</p>
+							<p class="tools">
+								<span class="time">
+								13:09
+							</span>
+								<span class="readed">
+								阅读人数10000
+							</span>
+								<span class="shareAndCollect">
+									<i class="share"></i>
+									<i class="collect"></i>
+								</span>
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		<div id="footer">
+					<ul>
+						<li class="active">
+								<div class="iconBox">
+									<i></i>
+								</div>
+								<span>首页</span>
+						</li>
+						<li>
+							<a href="question.html">
+								<div class="iconBox">
+									<i></i>
+								</div>
+								<span>专家问答</span>
+							</a>
+						</li>
+						<li>
+							<a href="encyclopedias.html">
+								<div class="iconBox">
+									<i></i>
+
+								</div>
+								<span>常识百科</span>
+							</a>
+						</li>
+							
+						<li>
+							<a href="./news.html">
+							<div class="iconBox">
+								<i></i>
+							</div>
+							<span>最新资讯</span>
+							</a>
+						</li>
+						<li>
+							<a href="./my.html">
+								<div class="iconBox">
+									<i></i>
+								</div>
+								<span>我的</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+</div>
 	</body>
-	<script type="text/javascript">
-		 document.documentElement.style.fontSize = window.innerWidth/3.75 + 'px';
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+     <script src="js/lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		//		banner初始化
+		var mySwiper = new Swiper('.swiper-container-banner', {
+			loop: true, // 循环模式选项
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		});
+		//		视频专题初始化
+
+		var swiper = new Swiper('.swiper-wrapper-video', {
+			slidesPerView: 'auto',
+			spaceBetween: 8,
+			freeMode: true,
+		});
+		/**
+		 * Created by lixj on 2015/8/14.
+		 *  js判断input输入框中是否有值，以此来判断是否隐藏默认提示信息 *  使用keyup事件
+		 */
+		$(function() {
+			$('#q').on('keyup', function() {
+				var len = document.getElementById('q').value;
+				if(len == '') {
+					$('#q_label').show();
+					//          $('#q_i').show();
+				} else {
+					$('#q_label').hide();
+					//          $('#q_i').hide();
+				}
+			});
+		});
+
 	</script>
+	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+
 </html>

@@ -1,0 +1,359 @@
+#container #banner .pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+  z-index: 999;
+}
+#container #banner .swiper-pagination-bullet {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  opacity: 1;
+  border-radius: 10px;
+  background: white;
+  margin: 0 3px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+#container #banner {
+  /**
+  *放置input的div盒子
+  *1.此处应我的项目需要，加了些特别的设置，如字体、背景色等，按需添加；
+  *2.内层input不加边框，看起来效果会自然一点，所以外层div设置了边框和圆角*/
+  /**
+  *label标签样式 放在.box下，不至于影响其他的label
+  *采取绝对定位，位置根据需求确定
+*/
+  /**
+  *input标签样式
+  *宽度适应外层div
+  *隐藏边框
+  *这里有个小技巧，height与line-height值相等，可保证文字垂直居中；但我发现文字比图标略偏下，进行了微调；
+*/
+  /**
+  *图标样式
+  *绝对定位，自定义颜色
+*/
+}
+#container #banner .swiper-pagination {
+  width: 44px;
+  margin: 0 auto;
+  display: block;
+  left: 50%;
+  margin-left: -22px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 12px;
+  line-height: 7px;
+}
+#container #banner .swiper-pagination-bullet {
+  background: #F2F5F7;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+#container #banner .swiper-pagination-bullet-active {
+  background: #fff;
+  width: 12px;
+  border-radius: 1.5px;
+}
+#container #banner .searchInput {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+#container #banner .searchInput label {
+  z-index: 2;
+  position: absolute;
+  color: #B2B2B2;
+  margin-left: 34px;
+  top: 7px;
+  font-weight: normal;
+}
+#container #banner .searchInput input {
+  text-indent: 34px;
+  height: 36px;
+  line-height: 34px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+#container #banner .searchInput i {
+  position: absolute;
+  background: url(img/img.png);
+  height: 20px;
+  width: 20px;
+  background-position: -143px 0;
+  top: 7px;
+  left: 7px;
+}
+#container #banner .searchInput {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #999999;
+  letter-spacing: 0;
+  width: 288px;
+  height: 36px;
+  opacity: 0.8;
+  background: #FFFFFF;
+  border-radius: 4px;
+  position: absolute;
+  top: 39px;
+  left: 71px;
+  z-index: 100;
+}
+#container #menu {
+  background: #fff;
+  padding-bottom: 20px;
+}
+#container #menu ul li {
+  box-sizing: border-box;
+  width: 32%;
+  display: inline-block;
+}
+#container #menu ul li a {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+#container #menu ul li a .icon {
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(106, 196, 128, 0.31);
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+#container #menu ul li a .icon b {
+  background: url(img/img.png);
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+  top: 50%;
+  margin-top: -12px;
+}
+#container #menu ul li a span {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0;
+}
+#container #menu ul li:nth-child(1) a .icon b {
+  height: 24px;
+  width: 24px;
+  background-position: -275px 0;
+}
+#container #menu ul li:nth-child(2) a .icon b {
+  height: 24px;
+  width: 24px;
+  background-position: 0 -16px;
+}
+#container #menu ul li:nth-child(3) a .icon b {
+  height: 26px;
+  width: 26px;
+  background-position: -424px 0;
+}
+#container #content {
+  padding-bottom: 56px;
+}
+#container #content .videoList {
+  background: #fff;
+  margin-top: 12px;
+}
+#container #content .videoList .title {
+  line-height: 56px;
+  padding: 0 16px;
+  height: 56px;
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #333333;
+  letter-spacing: 0;
+}
+#container #content .videoList .title span {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: 0;
+  text-align: right;
+  float: right;
+}
+#container #content .videoList .title span i {
+  display: inline-block;
+  background: url(img/img.png);
+  height: 8px;
+  width: 4px;
+  background-position: 0 0;
+}
+#container #content .videoList .swiper-wrapper-video {
+  padding-left: 16px;
+}
+#container #content .videoList .swiper-wrapper-video .swiper-slide {
+  width: 132px;
+  height: 75px;
+  position: relative;
+}
+#container #content .videoList .swiper-wrapper-video .swiper-slide a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#container #content .videoList .swiper-wrapper-video .swiper-slide a > i {
+  background: url(img/img.png);
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 50%;
+  margin-left: -10px;
+  top: 50%;
+  margin-top: -10px;
+  background-position: -163px 0;
+}
+#container #content .recommend {
+  background: #fff;
+  padding: 0 16px;
+}
+#container #content .recommend div:nth-child(1) {
+  margin-bottom: 0;
+}
+#container #content .recommend > .title {
+  line-height: 56px;
+  height: 56px;
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #333333;
+  letter-spacing: 0;
+}
+#container #content .recommend .picRecommend {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E0E4E8;
+}
+#container #content .recommend .picRecommend .title {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+#container #content .recommend .picRecommend ul {
+  width: 100%;
+  margin-top: 10px;
+}
+#container #content .recommend .picRecommend ul li {
+  width: calc(32.3% - 2px);
+  display: inline-block;
+  overflow: hidden;
+}
+#container #content .recommend .picRecommend ul li:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+#container #content .recommend .picRecommend ul li:nth-child(3) {
+  border-radius: 0 5px 5px 0;
+}
+#container #content .recommend .picRecommend ul li:nth-child(2) {
+  margin: 0 3px;
+}
+#container #content .recommend .picRecommend .tools {
+  padding: 13px 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+#container #content .recommend .picRecommend .tools .time {
+  margin-right: 15px;
+}
+#container #content .recommend .picRecommend .tools .shareAndCollect {
+  float: right;
+}
+#container #content .recommend .picRecommend .tools .shareAndCollect i {
+  display: inline-block;
+  background: url(img/img.png);
+}
+#container #content .recommend .picRecommend .tools .shareAndCollect .share {
+  height: 17px;
+  width: 19px;
+  background-position: -124px 0;
+}
+#container #content .recommend .picRecommend .tools .shareAndCollect .collect {
+  margin-left: 20px;
+  margin-right: 5px;
+  height: 17px;
+  width: 17px;
+  background-position: -90px 0;
+}
+#container #content .recommend .videoRecommend {
+  border-bottom: 1px solid #E0E4E8;
+  margin-top: 20px;
+}
+#container #content .recommend .videoRecommend .imgbox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#container #content .recommend .videoRecommend .imgbox img {
+  width: 100%;
+}
+#container #content .recommend .videoRecommend .imgbox > i {
+  background: url(img/pulse.png);
+  display: block;
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  left: 50%;
+  margin-left: -22px;
+  top: 50%;
+  margin-top: -22px;
+}
+#container #content .recommend .videoRecommend .text {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+#container #content .recommend .videoRecommend .tools {
+  padding: 13px 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+#container #content .recommend .videoRecommend .tools .time {
+  margin-right: 15px;
+}
+#container #content .recommend .videoRecommend .tools .shareAndCollect {
+  float: right;
+}
+#container #content .recommend .videoRecommend .tools .shareAndCollect i {
+  display: inline-block;
+  background: url(img/img.png);
+}
+#container #content .recommend .videoRecommend .tools .shareAndCollect .share {
+  height: 17px;
+  width: 19px;
+  background-position: -124px 0;
+}
+#container #content .recommend .videoRecommend .tools .shareAndCollect .collect {
+  margin-left: 20px;
+  margin-right: 5px;
+  height: 17px;
+  width: 17px;
+  background-position: -90px 0;
+}
+#footer ul li:nth-child(1) .iconBox i {
+  height: 34px;
+  width: 34px;
+  background-position: -653px 0;
+}

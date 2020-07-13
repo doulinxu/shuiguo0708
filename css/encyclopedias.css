@@ -1,0 +1,319 @@
+body {
+  background: #F2F5F7;
+}
+#container {
+  padding-bottom: 56px;
+}
+#container #title {
+  position: absolute;
+  font-family: PingFangSC-Semibold;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 44px;
+  z-index: 100;
+  width: 100%;
+}
+#container #title span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+#container #title i {
+  position: relative;
+  top: 12px;
+}
+#container #title i.back {
+  left: 5px;
+  height: 24px;
+  width: 24px;
+  background-position: -323px 0;
+  float: left;
+}
+#container #title i.search {
+  height: 20px;
+  width: 20px;
+  background-position: -28px -19px;
+  float: right;
+}
+#container #title i.more {
+  height: 25px;
+  width: 25px;
+  background-position: -347px 0;
+  float: right;
+  margin-left: 14px;
+  top: 9px;
+  margin-right: 6px;
+}
+#container #banner .pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+  z-index: 999;
+}
+#container #banner .swiper-pagination-bullet {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  opacity: 1;
+  border-radius: 10px;
+  background: white;
+  margin: 0 3px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+#container #banner {
+  background: #fff;
+  position: relative;
+}
+#container #banner .swiper-pagination {
+  width: 44px;
+  margin: 0 auto;
+  display: block;
+  left: 50%;
+  margin-left: -22px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 12px;
+  line-height: 7px;
+}
+#container #banner .swiper-pagination-bullet {
+  background: #F2F5F7;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+#container #banner .swiper-pagination-bullet-active {
+  background: #fff;
+  width: 12px;
+  border-radius: 1.5px;
+}
+#container #banner .swiper-slide {
+  position: relative;
+}
+#container #banner .swiper-slide i {
+  background: url(img/pulse.png);
+  display: block;
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  left: 50%;
+  margin-left: -22px;
+  top: 50%;
+  margin-top: -22px;
+  z-index: 122;
+}
+#container #banner .swiper-slide p.contentText {
+  text-indent: 20px;
+  font-family: PingFangSC-Semibold;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  bottom: 45px;
+  width: 90%;
+  z-index: 100;
+}
+#container #banner .swiper-slide p.contentChild {
+  text-indent: 20px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  bottom: 25px;
+  width: 90%;
+  z-index: 100;
+}
+#container #menuList {
+  width: 100%;
+  background: #fff;
+}
+#container #menuList .menuItem {
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E0E4E8;
+  overflow: visible;
+  padding-left: 10px;
+}
+#container #menuList .menuItem .icon {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  height: 16px;
+  width: 20px;
+  background-position: -47px -22px;
+}
+#container #menuList .menuItem li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 13.4%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #999999;
+  letter-spacing: 0;
+  display: inline-block;
+}
+#container #menuList .menuItem .active {
+  font-size: 16px;
+  border-bottom: 2px solid #65C06A;
+}
+#container #menuList .menuItem .active a {
+  color: #58B96F;
+}
+#container #menuList .menuListContent {
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0 16px;
+  padding-top: 20px;
+}
+#container #menuList .menuListContent > ul > li {
+  display: none;
+}
+#container #menuList .menuListContent > ul .active {
+  display: block;
+}
+#container #menuList .menuListContent > .title {
+  line-height: 56px;
+  height: 56px;
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #333333;
+  letter-spacing: 0;
+}
+#container #menuList .menuListContent .picRecommend {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E0E4E8;
+}
+#container #menuList .menuListContent .picRecommend .title {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+#container #menuList .menuListContent .picRecommend ul {
+  width: 100%;
+  margin-top: 10px;
+}
+#container #menuList .menuListContent .picRecommend ul li {
+  width: calc(32.3% - 2px);
+  display: inline-block;
+  overflow: hidden;
+}
+#container #menuList .menuListContent .picRecommend ul li:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+#container #menuList .menuListContent .picRecommend ul li:nth-child(3) {
+  border-radius: 0 5px 5px 0;
+}
+#container #menuList .menuListContent .picRecommend ul li:nth-child(2) {
+  margin: 0 3px;
+}
+#container #menuList .menuListContent .picRecommend .tools {
+  padding: 13px 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+#container #menuList .menuListContent .picRecommend .tools .time {
+  margin-right: 15px;
+}
+#container #menuList .menuListContent .picRecommend .tools .shareAndCollect {
+  float: right;
+}
+#container #menuList .menuListContent .picRecommend .tools .shareAndCollect i {
+  display: inline-block;
+  background: url(img/img.png);
+}
+#container #menuList .menuListContent .picRecommend .tools .shareAndCollect .share {
+  height: 17px;
+  width: 19px;
+  background-position: -124px 0;
+}
+#container #menuList .menuListContent .picRecommend .tools .shareAndCollect .collect {
+  margin-left: 20px;
+  margin-right: 5px;
+  height: 17px;
+  width: 17px;
+  background-position: -90px 0;
+}
+#container #menuList .menuListContent .videoRecommend {
+  border-bottom: 1px solid #E0E4E8;
+  margin-top: 20px;
+}
+#container #menuList .menuListContent .videoRecommend .imgbox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#container #menuList .menuListContent .videoRecommend .imgbox img {
+  width: 100%;
+}
+#container #menuList .menuListContent .videoRecommend .imgbox > i {
+  background: url(img/pulse.png);
+  display: block;
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  left: 50%;
+  margin-left: -22px;
+  top: 50%;
+  margin-top: -22px;
+}
+#container #menuList .menuListContent .videoRecommend .text {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+#container #menuList .menuListContent .videoRecommend .tools {
+  padding: 13px 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+#container #menuList .menuListContent .videoRecommend .tools .time {
+  margin-right: 15px;
+}
+#container #menuList .menuListContent .videoRecommend .tools .shareAndCollect {
+  float: right;
+}
+#container #menuList .menuListContent .videoRecommend .tools .shareAndCollect i {
+  display: inline-block;
+  background: url(img/img.png);
+}
+#container #menuList .menuListContent .videoRecommend .tools .shareAndCollect .share {
+  height: 17px;
+  width: 19px;
+  background-position: -124px 0;
+}
+#container #menuList .menuListContent .videoRecommend .tools .shareAndCollect .collect {
+  margin-left: 20px;
+  margin-right: 5px;
+  height: 17px;
+  width: 17px;
+  background-position: -90px 0;
+}
+#footer ul li:nth-child(3) .iconBox i {
+  height: 34px;
+  width: 34px;
+  background-position: -721px 0;
+}
