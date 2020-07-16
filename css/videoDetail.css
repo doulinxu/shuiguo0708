@@ -1,0 +1,566 @@
+body {
+  background: #fff;
+}
+.plyr__control--overlaid svg {
+  display: none;
+}
+.plyr--video .plyr__control.plyr__tab-focus {
+  background: none;
+}
+.plyr__control--overlaid {
+  width: 44px !important;
+  height: 44px !important;
+  background: url(img/pulse.png) no-repeat center;
+}
+#container > .title {
+  border-bottom: 1px solid #E0E4E8;
+  padding: 0 10px;
+  position: relative;
+  height: 66px;
+}
+#container > .title .titleContent {
+  margin-top: 15px;
+  margin-left: 30px;
+  width: 200px;
+}
+#container > .title .titleContent .one-txt-cut {
+  display: block;
+  width: 100%;
+  font-family: PingFangSC-Semibold;
+  font-size: 20px;
+  color: rgba(51, 51, 51, 0.96);
+  letter-spacing: 0;
+}
+#container > .title .titleContent .readed {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+#container > .title i {
+  position: absolute;
+}
+#container > .title .back {
+  top: 10px;
+  left: 5px;
+  height: 24px;
+  width: 24px;
+  background-position: -74px -16px;
+}
+#container > .title .search {
+  height: 20px;
+  width: 20px;
+  background-position: -120px -16px;
+  top: 10px;
+  right: 60px;
+}
+#container > .title .more {
+  height: 25px;
+  width: 25px;
+  background-position: -97px -16px;
+  top: 10px;
+  right: 10px;
+}
+#container .expertsInfo {
+  padding: 20px 16px;
+  background: #fff;
+}
+#container .expertsInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#container .expertsInfo div.name {
+  text-align: center;
+  display: inline-block;
+}
+#container .expertsInfo div.name span.nameText {
+  display: block;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.96);
+  letter-spacing: 0;
+}
+#container .expertsInfo div.name span.tag {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #58B96F;
+  line-height: 12px;
+  padding: 2px 3px;
+  margin: 0 auto;
+  width: auto;
+  background: #E9FDEA;
+}
+#container .expertsInfo span.guanzhu {
+  display: inline-block;
+  float: right;
+  margin-right: ;
+  width: 74px;
+  height: 36px;
+  background: #F3F5F7;
+  border-radius: 20px;
+  border-radius: 1,000px;
+  text-align: center;
+  line-height: 36px;
+  padding-left: 10px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #58B96F;
+  letter-spacing: 0;
+  position: relative;
+}
+#container .expertsInfo span.guanzhu i {
+  display: inline-block;
+  background-position: -23px 0px;
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+#container > .content {
+  padding: 0 16px;
+  border-bottom: 12px solid #F2F5F7;
+  padding-bottom: 20px;
+}
+#container > .content p {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+#container > .content img {
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+}
+#container > .content div.time {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: 15px;
+}
+#container > .content div.time span {
+  display: inline-block;
+  margin-right: 15px;
+}
+#container .comment {
+  padding: 0 16px;
+  padding-bottom: 15px;
+  border-bottom: 12px solid #F2F5F7;
+}
+#container .comment div.adv {
+  padding: 20px 0px;
+}
+#container .comment div.adv .swiper-slide {
+  border-radius: 5px;
+}
+#container .comment div.adv .swiper-pagination {
+  width: 44px;
+  margin: 0 auto;
+  display: block;
+  left: 50%;
+  margin-left: -22px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 12px;
+  line-height: 7px;
+}
+#container .comment div.adv .swiper-pagination-bullet {
+  background: #F2F5F7;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+#container .comment div.adv .swiper-pagination-bullet-active {
+  background: #fff;
+  width: 12px;
+  border-radius: 1.5px;
+}
+#container .comment .title {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  height: 30px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 20px;
+  border-bottom: 1px solid #E0E4E8;
+}
+#container .comment .commentContent ul li div.name {
+  position: relative;
+  padding-top: 15px;
+}
+#container .comment .commentContent ul li div.name img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#container .comment .commentContent ul li div.name span {
+  position: relative;
+  top: -15px;
+}
+#container .comment .commentContent ul li div.name span {
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.96);
+  letter-spacing: 0;
+}
+#container .comment .commentContent ul li div.name span.like {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: 0;
+}
+#container .comment .commentContent ul li div.name span.like i {
+  display: inline-block;
+  background-position: -180px -21px;
+  width: 15px;
+  height: 15px;
+}
+#container .comment .commentContent ul li .commentText {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333333;
+  line-height: 22px;
+  padding-left: 48px;
+  padding-right: 8px;
+}
+#container .comment .commentContent ul li .time {
+  padding-left: 48px;
+  padding-right: 8px;
+  height: 30px;
+  line-height: 30px;
+}
+#container .comment .commentContent ul li .time span {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #999999;
+  line-height: 14px;
+}
+#container .comment .commentContent ul li .time .before {
+  color: #999999;
+  margin-right: 5px;
+}
+#container .comment .commentContent ul li .time .reback {
+  color: #58B96F;
+}
+#container .comment .commentContent ul li .time .delete {
+  color: #FF6222;
+  float: right;
+  position: relative;
+  top: 5px;
+}
+#container .comment .commentContent ul li .mini ul {
+  height: 135px;
+}
+#container .comment .commentContent ul li .message {
+  padding-left: 48px;
+  padding-right: 8px;
+}
+#container .comment .commentContent ul li .message ul {
+  background: #F3F5F7;
+  padding: 12px;
+  overflow: hidden;
+}
+#container .comment .commentContent ul li .message ul li span {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #878686;
+  line-height: 14px;
+}
+#container .comment .commentContent ul li .message ul li .name {
+  color: #333;
+}
+#container .comment .commentContent ul li .message ul li .name i {
+  color: #878686;
+}
+#container .comment .commentContent ul li .message .checkall {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #58B96F;
+  line-height: 12px;
+  margin-top: 12px;
+  display: block;
+}
+#container .comment .noContent {
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+}
+#container .comment .noContent img {
+  display: block;
+  width: 122px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#container .comment .noContent p {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+#container .questions {
+  padding: 0 16px;
+}
+#container .questions > .title {
+  border-bottom: 1px solid #E0E4E8;
+  height: 50px;
+  position: relative;
+  margin-bottom: 10px;
+}
+#container .questions > .title ul {
+  display: inline-block;
+}
+#container .questions > .title ul li {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 59px;
+  margin-right: 60px;
+  padding-bottom: 10px;
+}
+#container .questions > .title ul .active {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #58B96F;
+  letter-spacing: 0;
+  line-height: 20px;
+  border-bottom: 2px solid #65C06A;
+}
+#container .questions > .title span.more {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: 0;
+  display: inline-block;
+}
+#container .questions > .title span.more i {
+  display: inline-block;
+  background: url(img/img.png);
+  height: 8px;
+  width: 4px;
+  background-position: 0 0;
+}
+#container .questions .content ul.new {
+  display: none;
+}
+#container .questions .content ul li {
+  border-bottom: 1px solid #E0E4E8;
+  margin-bottom: 10px;
+}
+#container .questions .content ul li .main {
+  position: relative;
+  height: 107px;
+}
+#container .questions .content ul li .main .left {
+  display: inline-block;
+  width: 57%;
+  height: 80px;
+}
+#container .questions .content ul li .main .left .experts {
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  padding: 10px 0;
+}
+#container .questions .content ul li .main .left .experts img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+}
+#container .questions .content ul li .main .left .experts span {
+  position: relative;
+  top: -5px;
+}
+#container .questions .content ul li .main .left .experts span.nameText {
+  display: block;
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.96);
+  letter-spacing: 0;
+}
+#container .questions .content ul li .main .left .experts span.tag {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #58B96F;
+  line-height: 12px;
+  padding: 2px 3px;
+  margin: 0 auto;
+  width: auto;
+  background: #E9FDEA;
+}
+#container .questions .content ul li .main .left .txt-cut {
+  font-family: ArialMT;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+#container .questions .content ul li .main .right {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  width: 40%;
+}
+#container .questions .content ul li .main .right img {
+  border-radius: 5px;
+}
+#container .questions .content ul li .readed {
+  margin: 10px 0;
+  position: relative;
+}
+#container .questions .content ul li .readed span {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-right: 10px;
+}
+#container .questions .content ul li .readed i {
+  position: absolute;
+}
+#container .questions .content ul li .readed .share {
+  display: inline-block;
+  background-position: -127px 0;
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  right: 35px;
+}
+#container .questions .content ul li .readed .like {
+  display: inline-block;
+  background-position: -108px 0;
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  right: 0px;
+}
+.writeComment {
+  border-top: 1px solid #F2F5F7;
+  margin-top: 20px;
+  padding: 15px 16px;
+}
+.writeComment p.toWrite {
+  position: relative;
+}
+.writeComment p.toWrite .text {
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #151515;
+  letter-spacing: 0;
+  line-height: 22px;
+  display: inline-block;
+  padding-left: 5px;
+  border-left: 1px solid #FD521B;
+}
+.writeComment p.toWrite .icon {
+  position: absolute;
+}
+.writeComment p.toWrite .dislike {
+  display: inline-block;
+  background-position: -143px -19px;
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  right: 70px;
+}
+.writeComment p.toWrite .like {
+  background-position: -163px -19px;
+  right: 35px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+}
+.writeComment p.toWrite .share {
+  display: inline-block;
+  background-position: -127px 0;
+  width: 15px;
+  height: 15px;
+  bottom: 0;
+  right: 0px;
+}
+.writeComment p.text-span {
+  font-family: PingFangSC-Regular;
+  font-size: 10px;
+  color: #C2C2C2;
+  letter-spacing: 0;
+}
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#modal .mask {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+#modal .modalContent {
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 10px 10px 0 0;
+  bottom: 0px;
+  background: #fff;
+  padding: 20px 16px;
+  box-sizing: border-box;
+}
+#modal .modalContent .title {
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E0E4E8;
+}
+#modal .modalContent .title span {
+  opacity: 0.45;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #5B626A;
+  letter-spacing: 0;
+  float: right;
+}
+#modal .modalContent .content {
+  width: 100%;
+  position: relative;
+}
+#modal .modalContent .content > span {
+  border-left: 2px solid #FD521B;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+}
+#modal .modalContent .content textarea {
+  margin-top: 3px;
+  box-sizing: border-box;
+  text-indent: 10px;
+  width: 100%;
+  border: 0;
+  padding: 5px;
+}

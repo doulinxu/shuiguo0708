@@ -244,6 +244,7 @@ a:hover {
   left: 0;
   bottom: 0;
   background: #fff;
+  z-index: 100000;
 }
 #footer ul {
   width: 100%;
