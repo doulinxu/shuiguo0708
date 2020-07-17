@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>视频专题</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/videoSpecial.css" />
+
 	</head>
-	
+
 	<body>
-		<!--主容器-->
 		<div id="container">
-			<!--题目部分-->
+			<!--title部分-->
 			<div class="title">
 				<a href="#">
 					<i class="icon back"></i>
 				</a>
 				<div class="titleContent">
-					<span class="one-txt-cut">自己在家怎么做水果捞？好…</span>
-					<span class="readed">1000已查看</span>
+					视频专题
 				</div>
 				<a href="#">
 					<i class="icon search"></i>
@@ -24,5 +27,169 @@
 					<i class="icon more"></i>
 				</a>
 			</div>
+			<ul id="videoList">
+				<li>
+					<div class="videoRecommend">
+						<a href="#">
+							<div class="imgbox">
+								<img data-src="img/videoindex.png" />
+								<i></i>
+								<p class="text txt-cut">
+									随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…
+								</p>
+							</div>
+
+							<p class="tools">
+								<span class="readed">
+								10000已查看
+							</span>
+								<span class="shareAndCollect">
+									<i class="share"></i>
+									<i class="collect"></i>
+								</span>
+							</p>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="videoRecommend">
+						<a href="#">
+							<div class="imgbox">
+								<img data-src="img/quesBanner.png" />
+								<i></i>
+								<p class="text txt-cut">
+									随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…
+								</p>
+							</div>
+
+							<p class="tools">
+								<span class="readed">
+								10000已查看
+							</span>
+								<span class="shareAndCollect">
+									<i class="share"></i>
+									<i class="collect"></i>
+								</span>
+							</p>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="videoRecommend">
+						<a href="#">
+							<div class="imgbox">
+								<img data-src="img/shipinzhaunti.png" />
+								<i></i>
+								<p class="text txt-cut">
+									随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…
+								</p>
+							</div>
+
+							<p class="tools">
+								<span class="readed">
+								10000已查看
+							</span>
+								<span class="shareAndCollect">
+									<i class="share"></i>
+									<i class="collect"></i>
+								</span>
+							</p>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="videoRecommend">
+						<a href="#">
+							<div class="imgbox">
+								<img data-src="img/videoindex.png" />
+								<i></i>
+								<p class="text txt-cut">
+									随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…
+								</p>
+							</div>
+
+							<p class="tools">
+								<span class="readed">
+								10000已查看
+							</span>
+								<span class="shareAndCollect">
+									<i class="share"></i>
+									<i class="collect"></i>
+								</span>
+							</p>
+						</a>
+					</div>
+				</li>
+			</ul>
+			<!--todo 下拉加载-->
+			<div class="checkMore">
+				<span>下滑更多
+				<i class="icon down"></i>
+				</span>
+			</div>
+		</div>
 	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		// console.log(totalHeight,seeHeight,thisBodyHeight,totalBodyHeight,thisWidth,thisDocumentWidth,thisBodyWidth,totalBodyWidth,scrollTop);
+		//添加滚动事件
+		function handle() {
+			var seeHeight = $(window).height(); //浏览器可视窗口高度
+			var totalHeight = $(document).height(); //整个文档高度     
+			var scrollTop = $(window).scrollTop(); //浏览器可视窗口顶端距离网页顶端的高度（垂直偏移）
+			if(scrollTop + seeHeight + 50 > totalHeight) {
+				console.log('下拉触发');
+				//      	todo
+				//	从接口里拿数据
+				var htmlText =
+					'<li>' +
+					'<div class="videoRecommend">' +
+					'<a href="#">' +
+					'<div class="imgbox">' +
+					'<img src="img/quesBanner.png" />' +
+					'<i></i>' +
+					'<p class="text txt-cut">' +
+					'随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…随着冠状病毒驱动程序远程工作，五种芒果可能支持走高，会不会变成狂欢过后的一地鸡毛的…' +
+					'</p>' +
+					'</div>' +
+					'<p class="tools">' +
+					'<span class="readed">' +
+					'10000已查看' +
+					'</span>' +
+					'<span class="shareAndCollect">' +
+					'<i class="share"></i>' +
+					'<i class="collect"></i>' +
+					'</span>' +
+					'</p>' +
+					'</a>' +
+					'</div>' +
+					'</li>';
+				var newText = '';
+				for(var i = 0; i < 5; i++) {
+					newText = newText + htmlText;
+				}
+				$('#videoList').append(newText);
+			}
+		}
+		//   	函数节流 每一秒触发一次下拉刷新
+		function throttle(fn, wait) {
+			var timer = null;
+			return function() {
+				var context = this;
+				var args = arguments;
+				if(!timer) {
+					timer = setTimeout(function() {
+						fn.apply(context, args);
+						timer = null;
+					}, wait)
+				}
+			}
+		}
+		window.addEventListener("scroll", throttle(handle, 1000));
+	</script>
+
 </html>
