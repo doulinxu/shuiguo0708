@@ -1,0 +1,277 @@
+body {
+  background: #fff;
+}
+#container {
+  padding-bottom: 66px;
+}
+#container i.back {
+  left: 5px;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 15px;
+  top: 25px;
+  background-position: -72px -16px;
+  z-index: 10000;
+}
+#container .main {
+  margin-top: 100px;
+  padding: 0 42px;
+}
+#container .main > .title {
+  font-family: PingFangSC-Semibold;
+  font-size: 24px;
+  color: #333333;
+  letter-spacing: 0;
+}
+#container .main .loginForm {
+  margin-top: 50px;
+}
+#container .main .loginForm .identyCode {
+  border-bottom: 1px solid #E0E4E8;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+  margin-top: 20px;
+}
+#container .main .loginForm .identyCode .getCode {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #58B96F;
+  letter-spacing: 0;
+  position: absolute;
+  right: 0;
+  height: 35px;
+  line-height: 31px;
+  top: 0;
+}
+#container .main .loginForm .identyCode input {
+  height: 33px;
+  line-height: 33px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 45px;
+  font-size: 16px;
+}
+#container .main .loginForm .identyCode ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #C2C2C2;
+  letter-spacing: 0;
+}
+#container .main .loginForm .identyCode ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #C2C2C2;
+  letter-spacing: 0;
+}
+#container .main .loginForm .identyCode :-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #C2C2C2;
+  letter-spacing: 0;
+}
+#container .main .loginForm .identyCode :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #C2C2C2;
+  letter-spacing: 0;
+}
+#container .main .loginForm .mobilePhone {
+  border-bottom: 1px solid #E0E4E8;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+}
+#container .main .loginForm .mobilePhone .prefix {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  position: absolute;
+  left: 0;
+  height: 35px;
+  line-height: 31px;
+  top: 2px;
+}
+#container .main .loginForm .mobilePhone .prefix i {
+  background-position: 0 0;
+  display: inline-block;
+  width: 4px;
+  height: 10px;
+}
+#container .main .loginForm .mobilePhone input {
+  height: 33px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 45px;
+  line-height: 33px;
+  font-size: 16px;
+  text-indent: 10px;
+}
+#container .main .loginForm .mobilePhone ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #C2C2C2;
+  letter-spacing: 0;
+}
+#container .main .loginForm .mobilePhone ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #C2C2C2;
+  letter-spacing: 0;
+}
+#container .main .loginForm .mobilePhone :-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #C2C2C2;
+  letter-spacing: 0;
+}
+#container .main .loginForm .mobilePhone :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #C2C2C2;
+  letter-spacing: 0;
+}
+#container .main .loginForm .agree {
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+#container .main .loginForm .agree > a {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #58B96F;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+#container .main .loginForm .agree .radio {
+  display: inline-block;
+}
+#container .main .loginForm .agree .radio label {
+  display: none;
+}
+#container .main .loginForm .agree label {
+  line-height: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 15px;
+  color: #777;
+}
+#container .main .loginForm .agree .radio_type {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  position: relative;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari 和 Chrome */
+}
+#container .main .loginForm .agree .radio_type:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E6E6E6;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+#container .main .loginForm .agree .radio_type:checked:before {
+  width: 18px;
+  height: 18px;
+  background: #c59c5a;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  background: url(img/img.png) no-repeat center;
+  background-position: -185px -2px;
+}
+#container .main .loginForm .agree .radio_type:checked + label {
+  color: #c59c5a;
+}
+#container .main .loginForm .loginBtn {
+  background-image: linear-gradient(144deg, #70C766 0%, #4DB36F 98%);
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+#container .main .loginForm .loginBtn.disabled {
+  opacity: 0.3;
+  background-image: linear-gradient(144deg, #70C766 0%, #4DB36F 98%);
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+#container .main .loginForm .changeType {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-top: 10px;
+}
+#container .main .thirdLogin {
+  margin-top: 100px;
+}
+#container .main .thirdLogin p.title {
+  width: 100%;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+#container .main .icons {
+  width: 100px;
+  margin: 0 auto;
+  height: 40px;
+  margin-top: 20px;
+}
+#container .main .icons .qq {
+  height: 40px;
+  width: 40px;
+  background-position: -829px 0;
+  float: left;
+}
+#container .main .icons .weibo {
+  height: 40px;
+  width: 40px;
+  background-position: -789px 0;
+  float: right;
+}
+.getCode.disabled {
+  color: #999999 !important;
+}
+i.error {
+  background: url(img/error.png) no-repeat center;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+.mobilePhone.error {
+  position: relative;
+}
+.mobilePhone.error input {
+  color: #FF6222;
+}
+.mobilePhone.error i.error {
+  display: block;
+}

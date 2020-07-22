@@ -216,11 +216,16 @@
                 }
             }
             .swiper-wrapper-video {
+                padding: 10px 0;
                 padding-left: 16px;
                 .swiper-slide {
+                    box-shadow: 1px 2px 5px #b3b3b3;
                     width: 132px;
                     height: 75px;
                     position: relative;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    overflow: hidden;
                     a {
                         display: inline-block;
                         width: 100%;
@@ -378,16 +383,9 @@
     }
 }
 
-#footer {
-    ul {
-        li:nth-child(1) {
-            .iconBox {
-                i {
-                    height: 34px;
-                    width: 34px;
-                    background-position: -653px 0;
-                }
-            }
-        }
-    }
+
+div.oneImg {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
 }

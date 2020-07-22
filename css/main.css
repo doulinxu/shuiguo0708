@@ -276,28 +276,47 @@ a:hover {
   line-height: 10px;
   color: #999999;
 }
-#footer ul li:nth-child(1) .iconBox i {
+#footer ul .iconBox.index i {
   height: 26px;
   width: 26px;
   background-position: -398px 0;
 }
-#footer ul li:nth-child(2) .iconBox i {
+#footer ul .iconBox.questions i {
   height: 24px;
   width: 24px;
   background-position: -251px 0;
 }
-#footer ul li:nth-child(3) .iconBox i {
+#footer ul .iconBox.encyclopedias i {
   height: 24px;
   width: 24px;
   background-position: -227px 0;
 }
-#footer ul li:nth-child(4) .iconBox i {
+#footer ul .iconBox.news i {
   height: 26px;
   width: 26px;
   background-position: -450px 0;
 }
-#footer ul li:nth-child(5) .iconBox i {
+#footer ul .iconBox.my i {
   height: 26px;
   width: 26px;
   background-position: -372px 0;
+}
+#footer ul .active i {
+  width: 34px !important;
+  height: 34px !important;
+}
+#footer ul .active .index i {
+  background-position: -653px 0;
+}
+#footer ul .active .encyclopedias i {
+  background-position: -721px 0;
+}
+#footer ul .active .questions i {
+  background-position: -619px 0;
+}
+#footer ul .active .news i {
+  background-position: -687px 0;
+}
+#footer ul .active .my i {
+  background-position: -755px 0;
 }

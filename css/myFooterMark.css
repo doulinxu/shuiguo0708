@@ -1,0 +1,165 @@
+#container {
+  padding-bottom: 66px;
+}
+#container #title {
+  font-family: PingFangSC-Semibold;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 44px;
+  z-index: 100;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 20px;
+  color: rgba(51, 51, 51, 0.96);
+}
+#container #title span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+#container #title i {
+  position: relative;
+  top: 12px;
+}
+#container #title i.back {
+  left: 5px;
+  height: 24px;
+  width: 24px;
+  background-position: -323px 0;
+  float: left;
+  background-position: -72px -16px;
+  z-index: 10000;
+}
+.content {
+  padding: 0 16px;
+}
+.content .picRecommend {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E0E4E8;
+}
+.content .picRecommend .title {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.content .picRecommend div.oneImg {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.content .picRecommend ul {
+  width: 100%;
+  margin-top: 10px;
+}
+.content .picRecommend ul li {
+  width: calc(32.3% - 2px);
+  display: inline-block;
+  overflow: hidden;
+}
+.content .picRecommend ul li:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+.content .picRecommend ul li:nth-child(3) {
+  border-radius: 0 5px 5px 0;
+}
+.content .picRecommend ul li:nth-child(2) {
+  margin: 0 3px;
+}
+.content .picRecommend .tools {
+  padding: 13px 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+.content .picRecommend .tools .time {
+  margin-right: 15px;
+}
+.content .picRecommend .tools .shareAndCollect {
+  float: right;
+}
+.content .picRecommend .tools .shareAndCollect i {
+  display: inline-block;
+  background: url(img/img.png);
+}
+.content .picRecommend .tools .shareAndCollect .share {
+  height: 17px;
+  width: 19px;
+  background-position: -124px 0;
+}
+.content .picRecommend .tools .shareAndCollect .collect {
+  margin-left: 20px;
+  margin-right: 5px;
+  height: 17px;
+  width: 17px;
+  background-position: -90px 0;
+}
+.content .videoRecommend {
+  border-bottom: 1px solid #E0E4E8;
+  margin-top: 20px;
+}
+.content .videoRecommend .imgbox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.content .videoRecommend .imgbox img {
+  width: 100%;
+}
+.content .videoRecommend .imgbox > i {
+  background: url(img/pulse.png);
+  display: block;
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  left: 50%;
+  margin-left: -22px;
+  top: 50%;
+  margin-top: -22px;
+}
+.content .videoRecommend .text {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.content .videoRecommend .tools {
+  padding: 13px 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+.content .videoRecommend .tools .time {
+  margin-right: 15px;
+}
+.content .videoRecommend .tools .shareAndCollect {
+  float: right;
+}
+.content .videoRecommend .tools .shareAndCollect i {
+  display: inline-block;
+  background: url(img/img.png);
+}
+.content .videoRecommend .tools .shareAndCollect .share {
+  height: 17px;
+  width: 19px;
+  background-position: -124px 0;
+}
+.content .videoRecommend .tools .shareAndCollect .collect {
+  margin-left: 20px;
+  margin-right: 5px;
+  height: 17px;
+  width: 17px;
+  background-position: -90px 0;
+}
+.content .txt-cut i {
+  color: #58B96F;
+}

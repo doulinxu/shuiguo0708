@@ -11,7 +11,7 @@
          text-align: center;
          position: relative;
      }
-     /**
+     /** 
   *label标签样式 放在.box下，不至于影响其他的label
   *采取绝对定位，位置根据需求确定
 */
@@ -32,13 +32,14 @@
 */
      
      .searchInput input {
-         text-indent: 34px;
-         height: 36px;
-         line-height: 34px;
-         width: 100%;
-         border: none;
-         outline: none;
-         background-color: #F3F5F7;
+           padding: 0 37px;
+    box-sizing: border-box;
+    height: 36px;
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #F3F5F7;
      }
      /**
   *图标样式
@@ -52,6 +53,7 @@
          width: 13px;
          top: 10px;
          right: 10px;
+         display: none;
      }
      
      .searchInput i.search {
@@ -70,7 +72,7 @@
          color: #999999;
          letter-spacing: 0;
          width: 75%;
-         height: 36px;
+         //       height: 36px;
          background: #FFFFFF;
          border-radius: 4px;
          border-radius: 4px;
@@ -98,18 +100,27 @@
              padding: 0 16px;
              width: 100%;
              box-sizing: border-box;
-            
              position: relative;
              .title {
                  font-family: PingFangSC-Medium;
                  font-size: 18px;
-                  height: 45px;
-             line-height: 45px;
+                 height: 45px;
+                 line-height: 45px;
                  color: #333333;
                  line-height: 18px;
-                 span {
+                 .titleContent {
                      height: 45px;
                      line-height: 45px;
+                 }
+                 .showDelete{
+                     display: none;
+                     font-family: PingFangSC-Regular;
+                      position: absolute;
+                     right: 5px;
+                     top: 15px;
+font-size: 12px;
+color: #333333;
+line-height: 16px;
                  }
                  i.down {
                      display: inline-block;
@@ -118,6 +129,9 @@
                      background-position: -4px 1px;
                      position: relative;
                      top: -3px;
+                 }
+                 i.up {
+                     background-position: -13px 1px;
                  }
                  i.delete {
                      width: 15px;
@@ -129,80 +143,131 @@
                  }
              }
          }
-         .historyContent{
-        padding-bottom:20px;
-             ul{
-                 li{
+         
+         .historyContent {
+             padding-bottom: 20px;
+             ul {
+                 padding-top:15px;
+                 
+                 li {
                      background: #F3F5F7;
-                      border-radius: 16px;
-                      padding:10px 12px;
-                      display: inline-block;
-                      margin-bottom:10px;
-font-family: PingFangSC-Regular;
-font-size: 12px;
-color: #333333;
-letter-spacing: 0;
-line-height: 12px;
-margin-right:12px;
+                     border-radius: 16px;
+                     padding: 10px 12px;
+                     display: inline-block;
+                     margin-bottom: 10px;
+                     font-family: PingFangSC-Regular;
+                     font-size: 12px;
+                     color: #333333;
+                     letter-spacing: 0;
+                     line-height: 12px;
+                     margin-right: 12px;
+                     position: relative;
+                     overflow: visible;
+                     i.delete{
+                         display: none;
+                        top:-3px;
+                        right: -3px;
+
+                     position: absolute;
+                    background: url(img/delete.png);
+         height: 13px;
+         width: 13px;
+                     }
                  }
              }
          }
-         .hotSearch{
-border-top:12px solid #F2F5F7;
-padding: 0 16px;
-padding-top:20px;
-             .hotTitle{
-                 margin-bottom:5px;
-font-family: PingFangSC-Medium;
-font-size: 18px;
-color: #333333;
-line-height: 18px;
+         .showDeleteBtn{
+             ul{
+                 li{
+                     i.delete{
+                         display: block;
+                     }
+                 }
              }
-             .hotList{
+         }
+         .hotSearch {
+             border-top: 12px solid #F2F5F7;
+             padding: 0 16px;
+             padding-top: 20px;
+             .hotTitle {
+                 margin-bottom: 5px;
+                 font-family: PingFangSC-Medium;
+                 font-size: 18px;
+                 color: #333333;
+                 line-height: 18px;
+             }
+             .hotList {
                  width: 100%;
-         
                  font-family: PingFangSC-Regular;
-font-size: 14px;
-color: #333333;
-line-height: 14px;
-li{
-     height:46px;
-                 line-height:46px;
-}
-li{
-    border-bottom:1px solid #E0E4E8;
-    i{
-        position: relative;
-        
-    }
-    i.up{
-        display: inline-block;
-        width: 12px;
-        height: 15px;
-        top: 3px;
-        background-position:-33px 0 ;
-    }
-    i.down{
-        display: inline-block;
-        width: 12px;
-        height: 15px;
-        top: 1px;
-        background-position:-76px 0 ;
-    }
-}
-                 span{
+                 font-size: 14px;
+                 color: #333333;
+                 line-height: 14px;
+                 li {
+                     height: 46px;
+                     line-height: 46px;
+                 }
+                 li {
+                     border-bottom: 1px solid #E0E4E8;
+                     i {
+                         position: relative;
+                     }
+                     i.up {
+                         display: inline-block;
+                         width: 12px;
+                         height: 15px;
+                         top: 3px;
+                         background-position: -33px 0;
+                     }
+                     i.down {
+                         display: inline-block;
+                         width: 12px;
+                         height: 15px;
+                         top: 1px;
+                         background-position: -76px 0;
+                     }
+                 }
+                 span {
                      font-family: DINAlternate-Bold;
-font-size: 14px;
-color: #FAB030;
-text-align: center;
-line-height: 14px;
-margin-right:15px;
-display: inline-block;
+                     font-size: 14px;
+                     color: #FAB030;
+                     text-align: center;
+                     line-height: 14px;
+                     margin-right: 15px;
+                     display: inline-block;
                  }
-                 .index{
-color: #58B96F;
-                     
+                 .index {
+                     color: #58B96F;
                  }
+             }
+         }
+     }
+     
+     .toggle {
+         ul {
+             height: 80px;
+             overflow: hidden;
+         }
+     }
+     
+     #searchMateContent {
+         position: absolute;
+         display: none;
+         width: 100%;
+         height: 100%;
+         padding-bottom: 70px;
+         background: #fff;
+         top: 70px;
+         left: 0;
+         box-sizing: border-box;
+         ul {
+             padding: 0 16px;
+             li {
+                 height: 47px;
+                 line-height: 47px;
+                 font-family: PingFangSC-Regular;
+                 font-size: 14px;
+                 color: #151515;
+                 border-bottom: 1px solid #E0E4E8;
              }
          }
      }
