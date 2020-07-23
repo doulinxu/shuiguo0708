@@ -5,7 +5,7 @@ body {
 .vjs-paused.vjs-has-started .vjs-big-play-button {
     display: block;
 }
-*{ touch-action: pan-y !important; } 
+*{ touch-action: pan-y; }
 #player{
 	width: 100%;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .vjs-tech {
-  pointer-events: auto;
+  -webkit-pointer-events: pan-y;
 }
 .vjs-paused .vjs-big-play-button{
 	width: 44px !important;
