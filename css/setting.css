@@ -24,8 +24,16 @@ body {
   width: 100%;
   border-bottom: 8px solid #F3F5F7;
   height: 123px;
-  position: relative;
   padding-bottom: 30px;
+  position: relative;
+}
+#container .userInfo .right {
+  position: absolute;
+  right: 22px;
+  top: 46px;
+  width: 5px;
+  height: 11px;
+  background-position: 1px 0;
 }
 #container .userInfo img {
   border-radius: 50%;
@@ -37,25 +45,15 @@ body {
   top: 20px;
   left: 16px;
 }
-#container .userInfo input.name {
+#container .userInfo span {
   font-family: PingFangSC-Semibold;
   font-size: 16px;
   color: #333333;
   letter-spacing: 0;
+  text-align: center;
+  text-shadow: 0 1px 20px rgba(102, 102, 102, 0.2);
+  line-height: 100px;
   margin-left: 92px;
-  margin-top: 47px;
-  background: none;
-  outline: none;
-  border: none;
-  -webkit-appearance: none;
-}
-#container .userInfo input:focus,
-#container .userInfo input:active,
-#container .userInfo input:visited,
-#container .userInfo input:hover,
-#container .userInfo input:link {
-  outline: none;
-  -webkit-appearance: none;
 }
 #container .itemList {
   padding: 0 16px;
@@ -92,14 +90,14 @@ body {
   /*Internet Explorer*/
   color: #757575;
 }
-#container .itemList ul li #getArea {
+#container .itemList ul li div {
   float: right;
   text-align: right;
   margin-right: 15px;
   font-size: 16px;
   width: auto !important;
 }
-#container .itemList ul li #getArea span {
+#container .itemList ul li div span {
   color: #757575;
 }
 #container .itemList ul li .right {
@@ -116,7 +114,7 @@ body {
   -webkit-appearance: none;
   border: 0;
 }
-.save {
+.logout {
   display: block;
   width: 75%;
   height: 40px;
@@ -127,7 +125,6 @@ body {
   border-radius: 20px;
   color: #fff;
   margin-top: 100px;
-  font-size: 14px;
 }
 .select_box.yes {
   z-index: 10000 !important;

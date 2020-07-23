@@ -8,9 +8,10 @@
 		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" href="css/swiper.css">
-		<link rel="stylesheet" href="css/plyc.css">
 		<link rel="stylesheet" type="text/css" href="css/videoDetail.css" />
 		<script src="js/swiper.js"></script>
+		<link href="//cdn.bootcss.com/video.js/7.0.0-alpha.1/alt/video-js-cdn.css" rel="stylesheet">
+		<script src="//cdn.bootcss.com/video.js/7.0.0-alpha.1/video.min.js"></script>
 	</head>
 
 	<body>
@@ -21,7 +22,7 @@
 			<div class="videoBox">
 				<div class="player">
 					<!-- poster是预览图地址 -->
-					<video id="player" poster="img/位图.png" controls crossorigin webkit-playsinline="true" playsinline="true">
+					<video class="video-js vjs-default-skin vjs-big-play-centered vjs-16-9" id="player"  poster="img/位图.png" controls crossorigin webkit-playsinline="true" playsinline="true">
 						<!-- 视频文件 -->
 						<source src="img/3630fdc78464799b35ea7ebc8cc1308e.mp4" type="video/mp4">
 						<a href="img/3630fdc78464799b35ea7ebc8cc1308e.mp4">Download</a>
@@ -477,52 +478,24 @@
 			</div>
 		</div>
 	</body>
-	<!-- 	<script>
-		plyr.setup({
-			click:true
-		});
-	</script> -->
-	<script src="js/plyr.js" type="text/javascript" charset="utf-8"></script>
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script type="text/javascript">
-		document.addEventListener('DOMContentLoaded', () => {
-			// This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
-			const player = new Plyr('#player', {
-				click: true,
-				settings: [],
-				autopause: false,
-				fullscreen: {
-					enabled: true, // Allow fullscreen?
-					fallback: true, // Fallback using full viewport/window
-					iosNative: false, // Use the native fullscreen in iOS (disables custom controls)
-					// Selector for the fullscreen container so contextual / non-player content can remain visible in fullscreen mode
-					// Non-ancestors of the player element will be ignored
-					// container: null, // defaults to the player element
-				},
+		var options = {
+			
+		}
+		var myvideo=videojs("player",options,function(){
+			this.on('play',function(){
+				console.log('播放中');
+				console.log($('.vjs-tech'));
+				this.on('click',function(){
+					console.log(myvideo);
+					if(!myvideo.pause ){
+						myvideo.play();
+					}
+				});
 			});
 		});
-// 		(function() {
-// 			var video, output;
-// 			var scale = 0.8;
-// 			var initialize = function() {
-// 				output = document.getElementsByTagName("body");
-// 				video = document.getElementById("player");
-// 				video.addEventListener('loadeddata', captureImage);
-// 			};
-// 			var captureImage = function() {
-// 				var canvas = document.createElement("canvas");
-// 				canvas.width = video.videoWidth * scale;
-// 				canvas.height = video.videoHeight * scale;
-// 				canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
-// 
-// 				var img = document.createElement("img");
-// 				img.src = canvas.toDataURL("image/png");
-// 				console.log(img);
-// 				$('#player').attr('poster',canvas.toDataURL("image/png"));
-// 				// $('.plyr__poster').attr('style','background-image:"' + canvas.toDataURL("image/png")+'"');
-// 			};
-// 			initialize();
-// 		})();
+		
 	</script>
 	<script src="js/lazyload.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/picDetail.js" type="text/javascript" charset="utf-8"></script>

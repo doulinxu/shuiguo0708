@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>消息通知</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/message.css" />
+	</head>
+
+	<body>
+		<div id="container">
+			<div class="title">
+				<i class="icon back"></i>
+				消息通知
+			</div>
+			<!-- 跳转到个人信息修改页 -->
+			<div class="content">
+				<ul>
+					<li>
+						<p class="time">
+							2020.01.02 9:20
+						</p>
+						<div class="text">
+							<p class="threelines-cut">
+								您已通过营养师审核，请填写营养师信息
+								<i class="dot"></i>
+							</p>
+						</div>
+						<div class="text">
+							<p class="threelines-cut">
+								文字这里是文字这里是文字这里是文字这里是文字文字这里是文字这里是文字这里是文字这里是文字
+							</p>
+						</div>
+					</li>
+					<li>
+						<p class="time">
+							2020.01.02 9:20
+						</p>
+						<div class="text">
+							<p class="threelines-cut">
+								您已通过营养师审核，请填写营养师信息
+							</p>
+						</div>
+					</li>
+					<li>
+						<p class="time">
+							2019.01.02 9:20
+						</p>
+						<div class="text">
+							<p class="threelines-cut">
+								<span>
+									您已通过营养师审核，请填写营养师信息
+									您已通过营养师审核，请填写营养师信息
+									您已通过营养师审核，请填写营养师信息
+									您已通过营养师审核，请填写营养师信息
+									您已通过营养师审核，请填写营养师信息
+									您已通过营养师审核，请填写营养师信息
+									您已通过营养师审核，请填写营养师信息
+								</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		//自动比较长度添加查看按钮
+		$('.content ul li').each(function() {
+			if ($(this).find('.threelines-cut span').height() > $(this).find('.threelines-cut').height()) {
+				console.log($(this));
+				$(this).append(
+					'<span class="checkMore">' +
+					'查看' +
+					'<i class="icon down"></i>' +
+					'</span>'
+				);
+				var _this = this;
+				$(this).find('.checkMore').on('click',function(){
+					$(this).hide();
+					$(_this).find('.threelines-cut').removeClass('threelines-cut');
+				});
+			}
+		})
+	</script>
+</html>

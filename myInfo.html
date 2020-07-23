@@ -13,15 +13,13 @@
 	<body>
 		<div id="container">
 			<div class="title">
-				<i class="icon back">
-					
-				</i> 个人信息
+				<i class="icon back"></i> 
+				个人信息
 			</div>
 			<div class="userInfo">
-				<img src="img/个人.png" />
-				<span>
-					阿里大
-				</span>
+				<img id="pic" src="img/个人.png" />
+				<input id="upload" name="file" accept="image/*" type="file" style="display: none">
+				<input class="name" type="text"  placeholder="请填写昵称" value="阿里大">
 			</div>
 			<div class="itemList">
 				<ul>
@@ -30,8 +28,6 @@
 							性别
 						</span>
 						<input readonly class="form-control" type="text" id="select_box" placeholder="请选择性别">
-
-						<div class="select_box"></div>
 						<i class="icon right"></i>
 					</li>
 					<li>
@@ -52,20 +48,50 @@
 					</li>
 				</ul>
 			</div>
+			<button class='save'>
+				保存
+			</button>
 		</div>
 	</body>
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script src="js/rolldate.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/area.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/dySelect.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+		// 时间级联
 		new Rolldate({
 			el: '#timerParker',
 			format: 'YYYY-MM-DD',
 			beginYear: 2000,
-			endYear: 2100
+			endYear: 2100,
+		    init: function() {
+				console.log('插件开始触发');
+			},
+			moveEnd: function(scroll) {
+				console.log(scroll)
+				console.log('滚动结束');
+			},
+			confirm: function(date) {
+				console.log('确认选择，在这里增加ajax请求');
+				var arr=date.split('-');
+				if(!arr[1]){
+					return arr[0];
+				}
+				if(!arr[1] && !arr[2] ){
+					return arr[0];
+				}
+				if(!arr[1] && arr[2] ){
+					return arr[0];
+				}
+				if(arr[1] && !arr[2] ){
+					return arr[0]+'-'+arr[1];
+				}
+			},
+			cancel: function() {
+				console.log('插件运行取消');
+			}
 		});
 		$(function() {
+			//地区级联
 			var mobileSelect1 = new MobileSelect({
 				trigger: '#getArea',
 				title: '单项选择',
@@ -85,35 +111,75 @@
 			        	area += d.value;
 			        });
 			        $('#getArea').html(area);
-			        console.log(area);
+					window.area = area;
 			    }
 			});
-
-			var hgS1 = new selectSwiper({
-				el: '.select_box',
-				// mustSelect:true, // 是否必选，默认false
-				// activeIndex: 0,//默认激活项下标，默认值：-1
-				data: ['女', '男'], //选项数据
-				init: function(index) { //插件加载完成执行
-					if(index !== -1) {
-						$('.btn1').html(this.data[index]);
-					}
-				},
-				okFunUndefind: function() { //选择空执行
-					alert('必须选择一项');
-					return false;
-				},
-				okFun: function(index) { //确认按钮执行
-					$('#select_box').val(this.data[index]);
-				},
-				closeFun: function() { //取消按钮执行
-					console.log('取消');
-				},
+			//性别
+			var sex = new MobileSelect({
+				trigger: '#select_box',
+				title: '性别',
+				wheels: [
+					 {data:['男','女']}
+					],
+				position: [1], //初始化定位
+				callback:function(indexArr, data){
+			        console.log(data); //返回选中的json数据 在这里增加ajax请求存储数据
+			        $('#select_box').val(data[0]);
+					window.sex = data[0];
+			    }
 			});
-			$('#select_box').on('click', function() { //对激活选择框绑定事件
-				hgS1.openSelectSwiper(); // 打开选择框
+		});
+		  $(function() {
+		      $("#pic").click(function() {
+		          $("#upload").click(); //隐藏了input:file样式后，点击头像就可以本地上传
+		          $("#upload").on("change", function() {
+		              var objUrl = getObjectURL(this.files[0]); //获取图片的路径，该路径不是图片在本地的路径
+		              if (objUrl) {
+		                  $("#pic").attr("src", objUrl); //将图片路径存入src中，显示出图片
+		              }
+		          });
+		      });
+			  $('.save').on('click',function(){
+				  save();
+			  });
+		  });
+		function save(){
+			// 图片上传
+			var pic = $('#upload')[0].files[0];
+			var file = new FormData();
+			file.append('image', pic);
+			//昵称和其他信息上传
+			 var data = {
+				 sex:this.sex,
+				 area:this.area,
+				 file:file,
+			 }
+			 console.log(data);
+			 return;
+			$.ajax({
+			    url: "服务器地址",
+			    type: "post",
+			    data:data,
+			    cache: false,
+			    contentType: false,
+			    processData: false,
+			    success: function(data) {
+			        console.log(data);
+			    }
 			});
-		})
+		}
+		  //建立一?可存取到?file的url
+		  function getObjectURL(file) {
+		      var url = null;
+		      if (window.createObjectURL != undefined) { // basic
+		          url = window.createObjectURL(file);
+		      } else if (window.URL != undefined) { // mozilla(firefox)
+		          url = window.URL.createObjectURL(file);
+		      } else if (window.webkitURL != undefined) { // webkit or chrome
+		          url = window.webkitURL.createObjectURL(file);
+		      }
+		      return url;
+		  }
 	</script>
 
 </html>
