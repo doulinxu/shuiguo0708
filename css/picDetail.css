@@ -2,7 +2,7 @@ body {
   background: #fff;
 }
 #container > .title {
-  border-bottom: 1px solid #E0E4E8;
+  border-bottom: 1px solid #e0e4e8;
   padding: 0 10px;
   position: relative;
   height: 66px;
@@ -75,12 +75,12 @@ body {
 #container .expertsInfo div.name span.tag {
   font-family: PingFangSC-Regular;
   font-size: 12px;
-  color: #58B96F;
+  color: #58b96f;
   line-height: 12px;
   padding: 2px 3px;
   margin: 0 auto;
   width: auto;
-  background: #E9FDEA;
+  background: #e9fdea;
 }
 #container .expertsInfo span.guanzhu {
   display: inline-block;
@@ -88,15 +88,15 @@ body {
   margin-right: ;
   width: 74px;
   height: 36px;
-  background: #F3F5F7;
+  background: #f3f5f7;
   border-radius: 20px;
-  border-radius: 1,000px;
+  border-radius: 1, 000px;
   text-align: center;
   line-height: 36px;
   padding-left: 10px;
   font-family: PingFangSC-Regular;
   font-size: 14px;
-  color: #58B96F;
+  color: #58b96f;
   letter-spacing: 0;
   position: relative;
 }
@@ -111,7 +111,7 @@ body {
 }
 #container > .content {
   padding: 0 16px;
-  border-bottom: 12px solid #F2F5F7;
+  border-bottom: 12px solid #f2f5f7;
   padding-bottom: 20px;
 }
 #container > .content p {
@@ -141,7 +141,7 @@ body {
 #container .comment {
   padding: 0 16px;
   padding-bottom: 15px;
-  border-bottom: 12px solid #F2F5F7;
+  border-bottom: 12px solid #f2f5f7;
 }
 #container .comment div.adv {
   padding: 20px 0px;
@@ -161,7 +161,7 @@ body {
   line-height: 7px;
 }
 #container .comment div.adv .swiper-pagination-bullet {
-  background: #F2F5F7;
+  background: #f2f5f7;
   height: 3px;
   width: 3px;
   border-radius: 50%;
@@ -178,7 +178,7 @@ body {
   color: #333333;
   letter-spacing: 0;
   line-height: 20px;
-  border-bottom: 1px solid #E0E4E8;
+  border-bottom: 1px solid #e0e4e8;
 }
 #container .comment .commentContent ul li div.name {
   position: relative;
@@ -240,10 +240,10 @@ body {
   margin-right: 5px;
 }
 #container .comment .commentContent ul li .time .reback {
-  color: #58B96F;
+  color: #58b96f;
 }
 #container .comment .commentContent ul li .time .delete {
-  color: #FF6222;
+  color: #ff6222;
   float: right;
   position: relative;
   top: 5px;
@@ -256,7 +256,7 @@ body {
   padding-right: 8px;
 }
 #container .comment .commentContent ul li .message ul {
-  background: #F3F5F7;
+  background: #f3f5f7;
   padding: 12px;
   overflow: hidden;
 }
@@ -275,7 +275,7 @@ body {
 #container .comment .commentContent ul li .message .checkall {
   font-family: PingFangSC-Regular;
   font-size: 12px;
-  color: #58B96F;
+  color: #58b96f;
   line-height: 12px;
   margin-top: 12px;
   display: block;
@@ -302,7 +302,7 @@ body {
   padding: 0 16px;
 }
 #container .questions > .title {
-  border-bottom: 1px solid #E0E4E8;
+  border-bottom: 1px solid #e0e4e8;
   height: 50px;
   position: relative;
   margin-bottom: 10px;
@@ -323,10 +323,10 @@ body {
 #container .questions > .title ul .active {
   font-family: PingFangSC-Medium;
   font-size: 18px;
-  color: #58B96F;
+  color: #58b96f;
   letter-spacing: 0;
   line-height: 20px;
-  border-bottom: 2px solid #65C06A;
+  border-bottom: 2px solid #65c06a;
 }
 #container .questions > .title span.more {
   position: absolute;
@@ -349,7 +349,7 @@ body {
   display: none;
 }
 #container .questions .content ul li {
-  border-bottom: 1px solid #E0E4E8;
+  border-bottom: 1px solid #e0e4e8;
   margin-bottom: 10px;
 }
 #container .questions .content ul li .main {
@@ -387,14 +387,22 @@ body {
 #container .questions .content ul li .main .left .experts span.tag {
   font-family: PingFangSC-Regular;
   font-size: 12px;
-  color: #58B96F;
+  color: #58b96f;
   line-height: 12px;
   padding: 2px 3px;
   margin: 0 auto;
   width: auto;
-  background: #E9FDEA;
+  background: #e9fdea;
 }
 #container .questions .content ul li .main .left .txt-cut {
+  font-family: ArialMT;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+#container .questions .content ul li .main .left .one-txt-cut {
+  margin: 14px 0;
   font-family: ArialMT;
   font-size: 16px;
   color: #333333;
@@ -443,7 +451,7 @@ body {
   right: 0px;
 }
 .writeComment {
-  border-top: 1px solid #F2F5F7;
+  border-top: 1px solid #f2f5f7;
   margin-top: 20px;
   padding: 15px 16px;
 }
@@ -458,7 +466,7 @@ body {
   line-height: 22px;
   display: inline-block;
   padding-left: 5px;
-  border-left: 1px solid #FD521B;
+  border-left: 1px solid #fd521b;
 }
 .writeComment p.toWrite .icon {
   position: absolute;
@@ -490,7 +498,7 @@ body {
 .writeComment p.text-span {
   font-family: PingFangSC-Regular;
   font-size: 10px;
-  color: #C2C2C2;
+  color: #c2c2c2;
   letter-spacing: 0;
 }
 #modal {
@@ -525,13 +533,13 @@ body {
   color: #333333;
   letter-spacing: 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid #E0E4E8;
+  border-bottom: 1px solid #e0e4e8;
 }
 #modal .modalContent .title span {
   opacity: 0.45;
   font-family: PingFangSC-Regular;
   font-size: 12px;
-  color: #5B626A;
+  color: #5b626a;
   letter-spacing: 0;
   float: right;
 }
@@ -540,7 +548,7 @@ body {
   position: relative;
 }
 #modal .modalContent .content > span {
-  border-left: 2px solid #FD521B;
+  border-left: 2px solid #fd521b;
   height: 12px;
   position: absolute;
   top: 5px;

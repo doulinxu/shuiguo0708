@@ -22,9 +22,11 @@
 				var len = document.getElementById('q').value;
 				if(len == '') {
 					$('#q_label').show();
+					$('#toSearch').hide();
 					//          $('#q_i').show();
 				} else {
 					$('#q_label').hide();
+					$('#toSearch').show();
 					//          $('#q_i').hide();
 				}
 			});

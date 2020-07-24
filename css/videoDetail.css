@@ -445,6 +445,14 @@ body {
   letter-spacing: 0;
   line-height: 22px;
 }
+#container .questions .content ul li .main .left .one-txt-cut {
+  margin: 14px 0;
+  font-family: ArialMT;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 22px;
+}
 #container .questions .content ul li .main .right {
   display: inline-block;
   position: absolute;
